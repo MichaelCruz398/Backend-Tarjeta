@@ -14,20 +14,22 @@ namespace RinconSylvanian.Api.Services
             _key = config["Jwt:Key"];
         }
 
-        public string GenerateToken(string email, int rol)
+        public string GenerateToken(string email, int rol, int id, string nombre)
         {
             var claims = new[]
             {
-            new Claim(ClaimTypes.Email, email),
-            new Claim(ClaimTypes.Role, rol == 2 ? "admin" : "usuario")
-        };
+                new Claim(ClaimTypes.Email, email),
+                new Claim(ClaimTypes.NameIdentifier, id.ToString()),
+                new Claim(ClaimTypes.Role, rol.ToString()),
+                new Claim("nombre", nombre)
+            };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_key));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                expires: DateTime.Now.AddHours(4),
                 claims: claims,
+                expires: DateTime.UtcNow.AddHours(6),
                 signingCredentials: creds
             );
 

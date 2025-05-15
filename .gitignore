@@ -1,0 +1,14 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# Others
+*.log
+*.tmp
+*.db
+.env
