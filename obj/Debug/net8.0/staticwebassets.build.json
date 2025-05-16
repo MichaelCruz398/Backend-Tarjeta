@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "xEBU6uOfQxS2LpQ7Y4kmxtDv5eMF5XO4gcm1ggX5Ww0=",
+  "Hash": "V16uBAzJVfnRsKgUmbxAGv5B1RqxPkZlwCp3WjbQMsY=",
   "Source": "RinconSylvanian.Api",
   "BasePath": "_content/RinconSylvanian.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

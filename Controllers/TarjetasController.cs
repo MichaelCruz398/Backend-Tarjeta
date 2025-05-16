@@ -116,5 +116,17 @@ namespace RinconSylvanian.Api.Controllers
             await _context.SaveChangesAsync();
             return Ok(new { message = "Sticker pegado correctamente" });
         }
+        [HttpGet("completadas")]
+        [Authorize(Roles = "1")]
+        public async Task<IActionResult> ObtenerTarjetasCompletadas()
+        {
+            var usuarioId = ObtenerUsuarioId();
+            var tarjetas = await _context.Tarjetas
+                .Where(t => t.UsuarioId == usuarioId && t.Completada)
+                .OrderByDescending(t => t.FechaCreacion)
+                .ToListAsync();
+
+            return Ok(tarjetas);
+        }
     }
 }

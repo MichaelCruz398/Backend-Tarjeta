@@ -37,6 +37,17 @@ namespace RinconSylvanian.Api.Controllers
             };
 
             _context.Usuarios.Add(nuevoUsuario);
+
+            await _context.SaveChangesAsync();
+            var tarjeta = new Tarjeta
+            {
+                UsuarioId = nuevoUsuario.Id,
+                FechaCreacion = DateTime.Now,
+                StickersPegados = 0,
+                Completada = false
+            };
+
+            _context.Tarjetas.Add(tarjeta);
             await _context.SaveChangesAsync();
 
             var token = _jwtService.GenerateToken(nuevoUsuario.Email, nuevoUsuario.Rol, nuevoUsuario.Id, nuevoUsuario.Nombre);

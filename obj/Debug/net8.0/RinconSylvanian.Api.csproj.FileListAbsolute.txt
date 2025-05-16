@@ -345,3 +345,4 @@ C:\Users\mcruz\Desktop\rincon-Sylvanian-Backend\Backend-Tarjeta\obj\Debug\net8.0
 C:\Users\mcruz\Desktop\rincon-Sylvanian-Backend\Backend-Tarjeta\obj\Debug\net8.0\RinconSylvanian.Api.pdb
 C:\Users\mcruz\Desktop\rincon-Sylvanian-Backend\Backend-Tarjeta\obj\Debug\net8.0\RinconSylvanian.Api.genruntimeconfig.cache
 C:\Users\mcruz\Desktop\rincon-Sylvanian-Backend\Backend-Tarjeta\obj\Debug\net8.0\ref\RinconSylvanian.Api.dll
+C:\Users\Maikel\source\repos\RinconSylvanian.Api\RinconSylvanian.Api\obj\Debug\net8.0\RinconSylvanian.Api.sourcelink.json

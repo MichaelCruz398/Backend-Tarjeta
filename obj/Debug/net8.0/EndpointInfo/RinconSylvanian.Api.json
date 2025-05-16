@@ -67,6 +67,18 @@
         }
       }
     },
+    "/api/Premios/mis-premios": {
+      "get": {
+        "tags": [
+          "Premios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Tarjetas/mis-tarjetas": {
       "get": {
         "tags": [
@@ -158,6 +170,30 @@
           }
         }
       }
+    },
+    "/api/Tarjetas/completadas": {
+      "get": {
+        "tags": [
+          "Tarjetas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/todos": {
+      "get": {
+        "tags": [
+          "Usuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -194,6 +230,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Ingrese el token JWT en el siguiente formato: Bearer {su_token}",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

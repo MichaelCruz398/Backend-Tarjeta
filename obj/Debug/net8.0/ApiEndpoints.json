@@ -32,6 +32,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "MisPremios",
+    "RelativePath": "api/Premios/mis-premios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RinconSylvanian.Api.Controllers.TarjetasController",
     "Method": "AsignarSticker",
     "RelativePath": "api/Tarjetas/asignar-sticker",
@@ -45,6 +55,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.TarjetasController",
+    "Method": "ObtenerTarjetasCompletadas",
+    "RelativePath": "api/Tarjetas/completadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -81,6 +101,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.UsuariosController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]
