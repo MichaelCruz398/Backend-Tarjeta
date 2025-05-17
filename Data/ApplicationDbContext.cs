@@ -11,6 +11,15 @@ namespace RinconSylvanian.Api.Data
         public DbSet<Sticker> Stickers { get; set; }
         public DbSet<Tarjeta> Tarjetas { get; set; }
         public DbSet<Premio> Premios { get; set; }
+        public DbSet<RecuperacionPassword> RecuperacionPassword { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<RecuperacionPassword>()
+                .HasIndex(r => r.Token)
+                .IsUnique();
+        }
     }
 }

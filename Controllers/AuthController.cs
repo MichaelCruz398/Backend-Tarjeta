@@ -80,6 +80,42 @@ namespace RinconSylvanian.Api.Controllers
                 nombre = usuario.Nombre
             });
         }
+        //[HttpPost("recuperar")]
+        //public async Task<IActionResult> EnviarCorreoRecuperacion([FromBody] string email)
+        //{
+        //    var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == email);
+        //    if (usuario == null)
+        //        return NotFound("Correo no registrado");
+
+        //    var token = Guid.NewGuid();
+        //    _context.RecuperacionPassword.Add(new RecuperacionPassword
+        //    {
+        //        UsuarioId = usuario.Id,
+        //        Token = token,
+        //        FechaExpiracion = DateTime.UtcNow.AddHours(1)
+        //    });
+        //    await _context.SaveChangesAsync();
+
+        //    var enlace = $"http://localhost:4200/cambiar-password/{token}";
+        //    await _emailService.EnviarCorreo(email, "Recuperar contraseña", $"Haz clic aquí: {enlace}");
+
+        //    return Ok();
+        //}
+
+        //[HttpPost("cambiar-password/{token}")]
+        //public async Task<IActionResult> CambiarPassword(Guid token, [FromBody] string nuevaPassword)
+        //{
+        //    var solicitud = await _context.RecuperacionPassword.FirstOrDefaultAsync(r => r.Token == token && r.Expira > DateTime.UtcNow);
+        //    if (solicitud == null) return BadRequest("Token inválido o expirado");
+
+        //    var usuario = await _context.Usuarios.FindAsync(solicitud.UsuarioId);
+        //    usuario.Password = BCrypt.Net.BCrypt.HashPassword(nuevaPassword);
+
+        //    _context.RecuperacionPassword.Remove(solicitud);
+        //    await _context.SaveChangesAsync();
+
+        //    return Ok();
+        //}
 
     }
 }

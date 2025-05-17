@@ -32,6 +32,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PasswordController",
+    "Method": "CambiarPassword",
+    "RelativePath": "api/Password/cambiar-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RinconSylvanian.Api.DTOs.Recuperar\u002BCambiarPasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PasswordController",
+    "Method": "SolicitarRecuperacion",
+    "RelativePath": "api/Password/solicitar-recuperacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "RinconSylvanian.Api.DTOs.Recuperar\u002BSolicitarRecuperacionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
     "Method": "MisPremios",
     "RelativePath": "api/Premios/mis-premios",
