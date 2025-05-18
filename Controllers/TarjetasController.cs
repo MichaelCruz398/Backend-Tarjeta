@@ -24,6 +24,33 @@ namespace RinconSylvanian.Api.Controllers
         {
             return int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
         }
+        [HttpGet("activa")]
+        [Authorize(Roles = "1")]
+        public async Task<IActionResult> ObtenerTarjetaActiva()
+        {
+            var usuarioId = ObtenerUsuarioId();
+            var tarjeta = await _context.Tarjetas
+                .Where(t => t.UsuarioId == usuarioId && !t.Completada)
+                .OrderByDescending(t => t.FechaCreacion)
+                .FirstOrDefaultAsync();
+
+            if (tarjeta == null)
+            {
+                // Si no existe, crea una nueva tarjeta automáticamente
+                tarjeta = new Tarjeta
+                {
+                    UsuarioId = usuarioId,
+                    FechaCreacion = DateTime.Now,
+                    StickersPegados = 0,
+                    Completada = false
+                };
+
+                _context.Tarjetas.Add(tarjeta);
+                await _context.SaveChangesAsync();
+            }
+
+            return Ok(tarjeta);
+        }
 
         [HttpGet("mis-tarjetas")]
         [Authorize(Roles = "1")] // 1 = usuario

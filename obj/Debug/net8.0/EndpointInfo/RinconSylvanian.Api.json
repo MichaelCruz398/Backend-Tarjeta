@@ -141,6 +141,18 @@
         }
       }
     },
+    "/api/Tarjetas/activa": {
+      "get": {
+        "tags": [
+          "Tarjetas"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Tarjetas/mis-tarjetas": {
       "get": {
         "tags": [

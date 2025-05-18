@@ -75,6 +75,16 @@
   },
   {
     "ContainingType": "RinconSylvanian.Api.Controllers.TarjetasController",
+    "Method": "ObtenerTarjetaActiva",
+    "RelativePath": "api/Tarjetas/activa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.TarjetasController",
     "Method": "AsignarSticker",
     "RelativePath": "api/Tarjetas/asignar-sticker",
     "HttpMethod": "POST",

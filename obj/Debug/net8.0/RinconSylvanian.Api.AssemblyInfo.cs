@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RinconSylvanian.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b46a34dd4250366d0a970619558c25928710a847")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a718f0d7e48d92a2bb40896acf66b67322263af5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RinconSylvanian.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RinconSylvanian.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
