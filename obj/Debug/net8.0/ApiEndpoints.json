@@ -65,8 +65,76 @@
   },
   {
     "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
-    "Method": "MisPremios",
+    "Method": "ObtenerAprobados",
+    "RelativePath": "api/Premios/aprobados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "AprobarPremio",
+    "RelativePath": "api/Premios/aprobar/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "ObtenerMisPremios",
     "RelativePath": "api/Premios/mis-premios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "RechazarPremio",
+    "RelativePath": "api/Premios/rechazar/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "SolicitarUso",
+    "RelativePath": "api/Premios/solicitar-uso/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RinconSylvanian.Api.Controllers.PremiosController",
+    "Method": "ObtenerSolicitudes",
+    "RelativePath": "api/Premios/solicitudes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -148,7 +216,7 @@
   {
     "ContainingType": "RinconSylvanian.Api.Controllers.UsuariosController",
     "Method": "ObtenerTodos",
-    "RelativePath": "todos",
+    "RelativePath": "api/Usuarios/todos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

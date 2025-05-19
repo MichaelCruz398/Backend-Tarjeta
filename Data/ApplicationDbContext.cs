@@ -20,6 +20,15 @@ namespace RinconSylvanian.Api.Data
             modelBuilder.Entity<RecuperacionPassword>()
                 .HasIndex(r => r.Token)
                 .IsUnique();
+
+            modelBuilder.Entity<Premio>()
+    .Property(p => p.Usado)
+    .HasDefaultValue(false);
+
+            modelBuilder.Entity<Premio>()
+                .Property(p => p.EnRevision)
+                .HasDefaultValue(false);
+
         }
     }
 }

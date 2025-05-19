@@ -141,6 +141,99 @@
         }
       }
     },
+    "/api/Premios/solicitar-uso/{id}": {
+      "post": {
+        "tags": [
+          "Premios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Premios/solicitudes": {
+      "get": {
+        "tags": [
+          "Premios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Premios/aprobar/{id}": {
+      "post": {
+        "tags": [
+          "Premios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Premios/rechazar/{id}": {
+      "post": {
+        "tags": [
+          "Premios"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Premios/aprobados": {
+      "get": {
+        "tags": [
+          "Premios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Tarjetas/activa": {
       "get": {
         "tags": [
@@ -257,7 +350,7 @@
         }
       }
     },
-    "/todos": {
+    "/api/Usuarios/todos": {
       "get": {
         "tags": [
           "Usuarios"
